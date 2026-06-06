@@ -1,0 +1,765 @@
+AMP AI Champions Hub - Codex Prompt Archive
+Generated from this working thread.
+
+This file includes:
+- Meta prompts used to ask Codex to generate better prompts
+- Optimized prompts produced for Codex
+- Full implementation prompts sent back to Codex
+- Update/correction prompts
+
+======================================================================
+1. META PROMPT - GENERIC HACKATHON ARCHITECTURE PROMPT
+======================================================================
+
+Generate an optimised prompt for codex to create a project architecture for a hackathon that we're doing.
+
+======================================================================
+2. OPTIMIZED PROMPT - GENERIC HACKATHON ARCHITECTURE
+======================================================================
+
+You are Codex, acting as a senior software architect and hackathon engineering lead.
+
+Help us design a practical project architecture for a hackathon. The goal is to create something we can build quickly, demo reliably, and extend later if needed.
+
+Project context:
+- Hackathon duration: [24/36/48 hours]
+- Team size: [number of people]
+- Project idea: [describe the idea]
+- Target users: [who will use it]
+- Core demo scenario: [the main flow judges must see working]
+- Required features: [must-have features]
+- Nice-to-have features: [optional features]
+- Preferred tech stack: [if any]
+- Deployment target: [Vercel, Render, Railway, Supabase, Firebase, Docker, local demo, etc.]
+- External APIs/services: [OpenAI, maps, payments, auth, sensors, etc.]
+- Constraints: [time, budget, privacy, offline support, hardware, limited API access, etc.]
+
+Design a hackathon-ready architecture with:
+
+1. High-level architecture
+- Frontend
+- Backend/API
+- Database/storage
+- External services
+- Deployment setup
+- End-to-end user flow
+
+2. Recommended tech stack
+- Choose fast, reliable, demo-friendly tools
+- Explain why each choice fits the hackathon
+- Avoid unnecessary complexity
+
+3. Repository structure
+- Propose a clean folder layout
+- Include frontend, backend, shared code, scripts, docs, and config where useful
+
+4. Core modules
+- Break the system into clear components
+- Define responsibilities and boundaries
+- Keep business logic separate from UI where reasonable
+
+5. Data model
+- Define the minimum required entities/tables/collections
+- Include key fields and relationships
+- Keep the schema MVP-focused
+
+6. API design
+- List the main endpoints or service functions
+- Include example request/response shapes for key flows
+
+7. MVP build plan
+- Break implementation into hackathon milestones
+- Identify what to build first
+- Identify what can be mocked, hardcoded, or skipped
+- Assign possible tasks across team members
+
+8. Demo strategy
+- Explain how to make the demo reliable
+- Include seed data, fallback states, local vs deployed demo options, and failure handling
+
+9. Risks and tradeoffs
+- Identify likely technical risks
+- Suggest simple mitigations
+
+10. Future extensions
+- List improvements that should not block the MVP
+
+Be concrete and pragmatic. Prioritize a working vertical slice over a perfect architecture. If details are missing, make reasonable assumptions and clearly state them before giving the architecture.
+
+======================================================================
+3. META PROMPT - AMP AI FLUENCY CHALLENGE PROMPT
+======================================================================
+
+Generate an optimised prompt for codex to create a project architecture for a hackathon that we're doing. The challenge is "AI is reshaping every profession. AMP's next step is to build a community that does not just learn about AI -- but leads with it. Design an AI Fluency ideathon that surfaces and empowers AI Champions from within the Muslim professional community to pilot, run, and scale grassroots AI learning programmes. Our task is to identify the biggest AI knowledge gaps facing muslim professionals today, proposes a peer-led programme that scaled across workplaces and community spaces, defines what an AI champion looks like, measures real fluency and behaviour change, not just attendance
+
+======================================================================
+4. OPTIMIZED PROMPT - AMP AI FLUENCY ARCHITECTURE
+======================================================================
+
+You are Codex, acting as a senior product architect, hackathon strategist, and AI programme designer.
+
+We are joining a hackathon/ideathon for the following challenge:
+
+"AI is reshaping every profession. AMP's next step is to build a community that does not just learn about AI, but leads with it. Design an AI Fluency ideathon that surfaces and empowers AI Champions from within the Muslim professional community to pilot, run, and scale grassroots AI learning programmes."
+
+Our task is to design a project architecture and MVP concept that addresses:
+
+- The biggest AI knowledge gaps facing Muslim professionals today
+- A peer-led AI fluency programme that can scale across workplaces and community spaces
+- A clear definition of what an AI Champion looks like
+- A way to measure real AI fluency and behaviour change, not just attendance
+- A practical pilot model that AMP can run, evaluate, and expand
+
+Create a hackathon-ready project architecture for a digital platform, programme system, or hybrid solution that helps AMP identify, train, activate, and measure AI Champions.
+
+Assume:
+- Target users include Muslim professionals, workplace mentors, community organisers, AMP programme leads, and potential AI Champions
+- The solution should be realistic to prototype during a hackathon
+- The MVP must be demo-friendly and show a clear end-to-end flow
+- The architecture should support future scaling across companies, mosques, community organisations, and professional networks
+- The solution should be culturally aware, inclusive, privacy-conscious, and professionally credible
+
+Produce the following:
+
+1. Problem Framing
+- Summarise the core problem in practical terms
+- Identify the most likely AI knowledge gaps among Muslim professionals
+- Distinguish between awareness gaps, practical skill gaps, confidence gaps, ethical concerns, and workplace adoption barriers
+
+2. Proposed Solution
+- Describe the product/programme concept
+- Explain how it helps AMP surface, train, and empower AI Champions
+- Explain what makes it peer-led and scalable
+- Include the main value proposition for professionals, employers, community spaces, and AMP
+
+3. High-Level Architecture
+- Describe the frontend experience
+- Describe the backend/API layer
+- Describe the database or storage model
+- Describe any AI components
+- Describe analytics and measurement components
+- Include an end-to-end flow from user onboarding to champion activation and impact tracking
+
+4. MVP Demo Flow
+Design one strong judging demo flow, for example:
+- A professional takes an AI fluency self-assessment
+- The system identifies their knowledge gaps
+- The system recommends a peer-led learning pathway
+- A potential AI Champion is identified based on readiness signals
+- The Champion receives a starter kit to run a session
+- Participants complete a practical challenge
+- AMP sees dashboard evidence of fluency growth and behaviour change
+
+5. Core Features
+Split features into:
+- Must-have MVP features
+- Nice-to-have features
+- Future scaling features
+
+For each feature, explain:
+- What it does
+- Who uses it
+- Why it matters
+- Whether it should be built, mocked, or simulated for the hackathon
+
+6. AI Champion Definition
+Define what an AI Champion is in this context.
+Include:
+- Required traits
+- Practical skills
+- Community leadership behaviours
+- Ethical awareness
+- Workplace/community influence
+- Readiness indicators
+- Example scoring rubric
+
+7. AI Fluency Measurement Model
+Design a measurement framework that tracks real fluency and behaviour change, not just attendance.
+Include:
+- Baseline assessment
+- Practical task completion
+- Confidence and mindset shift
+- Real workplace/community use cases
+- Peer teaching activity
+- Follow-up behaviour tracking
+- Champion activation metrics
+- Suggested scoring system
+
+8. Data Model
+Propose the minimum useful data entities, such as:
+- User
+- Organisation
+- Community Space
+- Assessment
+- Knowledge Gap
+- Learning Pathway
+- AI Champion Profile
+- Session
+- Practical Challenge
+- Behaviour Change Evidence
+- Impact Metric
+
+For each entity, include key fields and relationships.
+
+9. API / Service Design
+Propose the main API endpoints or service functions.
+Include example request and response shapes for:
+- Submitting an AI fluency assessment
+- Generating a learning pathway
+- Identifying Champion candidates
+- Creating a peer-led session
+- Logging behaviour change evidence
+- Fetching AMP impact dashboard data
+
+10. Recommended Tech Stack
+Recommend a hackathon-friendly stack.
+Prioritise speed, reliability, and demo quality.
+Consider:
+- Frontend
+- Backend
+- Database
+- Authentication
+- AI/LLM integration
+- Analytics/dashboarding
+- Deployment
+
+Explain why each choice is appropriate.
+
+11. Repository Structure
+Propose a clean repo layout.
+Include folders for:
+- Frontend app
+- Backend/API
+- Shared types
+- AI prompts/services
+- Seed data
+- Programme content
+- Tests
+- Documentation
+
+12. Implementation Plan
+Break the build into hackathon milestones:
+- First 2 hours
+- First half-day
+- Day 1
+- Final demo preparation
+
+Include task assignments for a small team of 3-5 people.
+
+13. Demo Reliability Strategy
+Explain how to make the project robust for judging.
+Include:
+- Seed data
+- Mock AI fallback
+- Preloaded assessment examples
+- Offline/local fallback
+- Dashboard screenshots or cached results
+- Simple failure handling
+
+14. Risks and Tradeoffs
+Identify key risks, such as:
+- Over-reliance on AI-generated recommendations
+- Measuring attendance instead of behaviour change
+- Privacy concerns
+- Cultural tokenism
+- Hard-to-scale peer programmes
+- Weak Champion selection criteria
+
+Suggest practical mitigations.
+
+15. Final Output
+End with:
+- A concise architecture summary
+- The recommended MVP scope
+- The strongest demo narrative
+- What should be built versus mocked during the hackathon
+
+Be specific, structured, and pragmatic. Avoid generic AI education advice. Focus on a solution AMP could realistically pilot with Muslim professionals and scale through workplaces and community spaces.
+
+======================================================================
+5. IMPLEMENTATION PROMPT - AMP AI FLUENCY ARCHITECTURE RESPONSE
+======================================================================
+
+You are Codex, acting as a senior product architect, hackathon strategist, and AI programme designer.
+
+We are joining a hackathon/ideathon for the following challenge:
+
+"AI is reshaping every profession. AMP's next step is to build a community that does not just learn about AI, but leads with it. Design an AI Fluency ideathon that surfaces and empowers AI Champions from within the Muslim professional community to pilot, run, and scale grassroots AI learning programmes."
+
+Our task is to design a project architecture and MVP concept that addresses:
+- The biggest AI knowledge gaps facing Muslim professionals today
+- A peer-led AI fluency programme that can scale across workplaces and community spaces
+- A clear definition of what an AI Champion looks like
+- A way to measure real AI fluency and behaviour change, not just attendance
+- A practical pilot model that AMP can run, evaluate, and expand
+
+Create a hackathon-ready project architecture for a digital platform, programme system, or hybrid solution that helps AMP identify, train, activate, and measure AI Champions.
+
+Assume:
+- Target users include Muslim professionals, workplace mentors, community organisers, AMP programme leads, and potential AI Champions
+- The solution should be realistic to prototype during a hackathon
+- The MVP must be demo-friendly and show a clear end-to-end flow
+- The architecture should support future scaling across companies, mosques, community organisations, and professional networks
+- The solution should be culturally aware, inclusive, privacy-conscious, and professionally credible
+
+Produce the following:
+1. Problem Framing
+2. Proposed Solution
+3. High-Level Architecture
+4. MVP Demo Flow
+5. Core Features
+6. AI Champion Definition
+7. AI Fluency Measurement Model
+8. Data Model
+9. API / Service Design
+10. Recommended Tech Stack
+11. Repository Structure
+12. Implementation Plan
+13. Demo Reliability Strategy
+14. Risks and Tradeoffs
+15. Final Output
+
+Be specific, structured, and pragmatic. Avoid generic AI education advice. Focus on a solution AMP could realistically pilot with Muslim professionals and scale through workplaces and community spaces.
+
+======================================================================
+6. META PROMPT - INDUSTRY DASHBOARD AND VERCEL PROMPT
+======================================================================
+
+Construction, Architecture, Banking, Childcare, Education, Military. These are the industries we are targetting, we plan to create the blueprints for each industry, the output is in dashboard format and deployable on vercel. Also, ensure that you use the appropriate age group as well that has a bigger gap to be filled in each industry. Generate a prompt for me to send back to codex, optimised, and start the vercel production
+
+======================================================================
+7. OPTIMIZED PROMPT - INDUSTRY DASHBOARD AND VERCEL
+======================================================================
+
+You are Codex, acting as a senior product architect, hackathon strategist, AI programme designer, and full-stack engineer.
+
+We are building a Vercel-deployable dashboard MVP for AMP's AI Fluency ideathon.
+
+Challenge:
+"AI is reshaping every profession. AMP's next step is to build a community that does not just learn about AI, but leads with it. Design an AI Fluency ideathon that surfaces and empowers AI Champions from within the Muslim professional community to pilot, run, and scale grassroots AI learning programmes."
+
+Target industries:
+- Construction
+- Architecture
+- Banking
+- Childcare
+- Education
+- Military
+
+Core requirement:
+Create industry-specific AI Fluency Blueprints for each target industry. Each blueprint should identify:
+- The biggest AI knowledge gaps in that industry
+- The age group or career stage with the largest AI fluency gap
+- Why that group is most at risk of being left behind
+- Practical AI use cases relevant to that industry
+- Ethical, privacy, cultural, and workplace concerns
+- What an AI Champion looks like in that industry
+- A peer-led programme model for that industry
+- How to measure real behaviour change, not just attendance
+
+Product format:
+Build a dashboard-style web app deployable on Vercel.
+
+The MVP should include:
+1. Industry Blueprint Dashboard
+   - Cards or tabs for Construction, Architecture, Banking, Childcare, Education, and Military
+   - Each industry has a clear AI fluency gap summary
+   - Show the priority age group/career stage for intervention
+   - Show recommended AI Champion profile
+   - Show recommended peer-led learning pathway
+   - Show behaviour-change metrics
+
+2. Industry Blueprint Detail Page
+   For each industry, include:
+   - AI knowledge gap diagnosis
+   - Target age group/career stage
+   - Practical AI workflows
+   - Ethical/privacy considerations
+   - Champion readiness criteria
+   - Suggested pilot programme
+   - Measurement framework
+   - Scaling strategy across workplaces and community spaces
+
+3. AI Champion Model
+   Define Champion scoring across:
+   - Practical AI skill
+   - Confidence
+   - Ethical judgement
+   - Peer leadership
+   - Workplace/community influence
+   - Ability to run grassroots learning sessions
+
+4. AI Fluency Measurement Model
+   Track:
+   - Baseline fluency
+   - Practical task completion
+   - Confidence shift
+   - Ethical AI understanding
+   - Real workplace/community AI use
+   - Peer teaching activity
+   - Follow-up behaviour change
+
+5. AMP Admin Dashboard
+   Show:
+   - Total assessed professionals
+   - Industry-by-industry AI gap map
+   - Priority age groups
+   - Champion candidates identified
+   - Sessions planned/run
+   - Behaviour change evidence
+   - Programme scaling readiness
+
+Architecture requirements:
+- Use Next.js + TypeScript
+- Use a clean dashboard UI suitable for a professional/community organisation
+- Use Tailwind CSS and preferably shadcn/ui or simple reusable components
+- Use static seed data for the hackathon MVP
+- Structure data cleanly so it can later move to Supabase/Postgres
+- Keep business logic separate from UI components
+- Include reusable types for IndustryBlueprint, AIChampionProfile, FluencyMetric, ProgrammePilot, and BehaviourChangeEvidence
+- Include mock data for all six industries
+- Include a production-ready Vercel deployment setup
+
+Suggested age/career-stage logic:
+For each industry, choose the age group or career stage most likely to have the biggest practical AI fluency gap. Do not assume the oldest group always has the biggest gap. Consider:
+- Mid-career professionals who manage workflows but have limited AI exposure
+- Senior professionals with decision-making authority but low hands-on AI confidence
+- Early-career workers who use tools casually but lack ethical/workplace fluency
+- Sector-specific constraints such as safety, regulation, privacy, hierarchy, or care responsibilities
+
+For each industry, explain the reasoning behind the selected target group.
+
+Demo flow:
+Create one strong judging narrative:
+1. AMP opens the dashboard and sees six industry AI Fluency Blueprints.
+2. AMP selects an industry, for example Banking or Childcare.
+3. The dashboard reveals the largest AI fluency gap and target age group.
+4. The system shows what an AI Champion should look like in that industry.
+5. The system recommends a peer-led pilot programme.
+6. AMP sees how behaviour change will be measured after the session.
+7. The dashboard shows how this model can scale across workplaces and community spaces.
+
+Implementation output:
+- Generate the full project architecture
+- Create the Next.js app if not present
+- Implement the dashboard MVP
+- Add seed data for the six industries
+- Add clean reusable components
+- Add README with setup and deployment instructions
+- Run typecheck/build
+- Start a local production build where possible
+- Prepare for Vercel production deployment
+
+Vercel deployment requirement:
+After implementation:
+- Ensure `npm run build` passes
+- Ensure the app is ready for Vercel
+- If Vercel CLI is available and the project is linked, deploy to production using:
+  `vercel --prod`
+- If Vercel is not configured, provide exact setup steps:
+  `npm i -g vercel`
+  `vercel login`
+  `vercel link`
+  `vercel --prod`
+
+Be specific, pragmatic, and demo-focused. Prioritise a polished dashboard MVP over excessive backend complexity. Use synthetic/sample data only. Avoid generic AI education advice; make every blueprint industry-specific and useful for AMP's Muslim professional community.
+
+Production deploy status: I could not start Vercel production from the current workspace because /Users/dansyar/Documents/Adobe/AMP is empty, not a Git project, and the vercel CLI is not installed.
+
+======================================================================
+8. IMPLEMENTATION PROMPT - BUILD DASHBOARD MVP
+======================================================================
+
+You are Codex, acting as a senior product architect, hackathon strategist, AI programme designer, and full-stack engineer.
+
+We are building a Vercel-deployable dashboard MVP for AMP's AI Fluency ideathon.
+
+Challenge:
+"AI is reshaping every profession. AMP's next step is to build a community that does not just learn about AI, but leads with it. Design an AI Fluency ideathon that surfaces and empowers AI Champions from within the Muslim professional community to pilot, run, and scale grassroots AI learning programmes."
+
+Target industries:
+- Construction
+- Architecture
+- Banking
+- Childcare
+- Education
+- Military
+
+Core requirement:
+Create industry-specific AI Fluency Blueprints for each target industry. Each blueprint should identify:
+- The biggest AI knowledge gaps in that industry
+- The age group or career stage with the largest AI fluency gap
+- Why that group is most at risk of being left behind
+- Practical AI use cases relevant to that industry
+- Ethical, privacy, cultural, and workplace concerns
+- What an AI Champion looks like in that industry
+- A peer-led programme model for that industry
+- How to measure real behaviour change, not just attendance
+
+Product format:
+Build a dashboard-style web app deployable on Vercel.
+
+The MVP should include:
+1. Industry Blueprint Dashboard
+2. Industry Blueprint Detail Page
+3. AI Champion Model
+4. AI Fluency Measurement Model
+5. AMP Admin Dashboard
+
+Architecture requirements:
+- Use Next.js + TypeScript
+- Use a clean dashboard UI suitable for a professional/community organisation
+- Use Tailwind CSS and preferably shadcn/ui or simple reusable components
+- Use static seed data for the hackathon MVP
+- Structure data cleanly so it can later move to Supabase/Postgres
+- Keep business logic separate from UI components
+- Include reusable types for IndustryBlueprint, AIChampionProfile, FluencyMetric, ProgrammePilot, and BehaviourChangeEvidence
+- Include mock data for all six industries
+- Include a production-ready Vercel deployment setup
+
+Suggested age/career-stage logic:
+For each industry, choose the age group or career stage most likely to have the biggest practical AI fluency gap. Do not assume the oldest group always has the biggest gap.
+
+Demo flow:
+1. AMP opens the dashboard and sees six industry AI Fluency Blueprints.
+2. AMP selects an industry, for example Banking or Childcare.
+3. The dashboard reveals the largest AI fluency gap and target age group.
+4. The system shows what an AI Champion should look like in that industry.
+5. The system recommends a peer-led pilot programme.
+6. AMP sees how behaviour change will be measured after the session.
+7. The dashboard shows how this model can scale across workplaces and community spaces.
+
+Implementation output:
+- Generate the full project architecture
+- Create the Next.js app if not present
+- Implement the dashboard MVP
+- Add seed data for the six industries
+- Add clean reusable components
+- Add README with setup and deployment instructions
+- Run typecheck/build
+- Start a local production build where possible
+- Prepare for Vercel production deployment
+
+Vercel deployment requirement:
+After implementation:
+- Ensure `npm run build` passes
+- Ensure the app is ready for Vercel
+- If Vercel CLI is available and the project is linked, deploy to production using:
+  `vercel --prod`
+- If Vercel is not configured, provide exact setup steps:
+  `npm i -g vercel`
+  `vercel login`
+  `vercel link`
+  `vercel --prod`
+
+Be specific, pragmatic, and demo-focused. Prioritise a polished dashboard MVP over excessive backend complexity. Use synthetic/sample data only. Avoid generic AI education advice; make every blueprint industry-specific and useful for AMP's Muslim professional community.
+
+Production deploy status: I could not start Vercel production from the current workspace because /Users/dansyar/Documents/Adobe/AMP is empty, not a Git project, and the vercel CLI is not installed.
+
+======================================================================
+9. GITHUB AND DEPLOYMENT PROMPT
+======================================================================
+
+I will need to update this on github and push it as well before deploying on vercel
+
+======================================================================
+10. GITHUB REPO PROMPT
+======================================================================
+
+I have created an AMP repo here https://github.com/dansyar/AMP, push the final code here before i run it on vercel
+
+======================================================================
+11. META PROMPT - TIMELINE CORRECTION PROMPT
+======================================================================
+
+Previously i mentioned that it's a 90-day programme, but it should be a 1-day programme to be launched in 90 days, regenerate the prompt for me to send back to codex to make the change
+
+======================================================================
+12. OPTIMIZED PROMPT - TIMELINE CORRECTION TO 1-DAY PROGRAMME WITH 90-DAY LAUNCH
+======================================================================
+
+Update the AMP AI Champions Hub MVP to correct the programme timeline.
+
+Important correction:
+The programme is NOT a 90-day programme.
+
+It should be:
+- A 1-day AI Fluency ideathon / activation programme
+- Designed, prepared, and launched within 90 days
+
+Update the product architecture, dashboard content, programme language, and README accordingly.
+
+Required changes:
+
+1. Replace any framing that implies the learning programme itself lasts 90 days.
+   Correct framing:
+   "A 1-day AI Fluency ideathon designed to identify, train, and activate AI Champions, with a 90-day launch preparation roadmap."
+
+2. Update all industry blueprints so each pilot programme is a 1-day format.
+   For each industry, the programme should include:
+   - Pre-event diagnostic or registration assessment
+   - 1-day in-person or hybrid ideathon
+   - Industry-specific AI knowledge gap briefing
+   - Practical AI challenge
+   - Champion identification activity
+   - Peer-led facilitation practice
+   - Behaviour-change commitment or action pledge
+   - Post-event follow-up measurement
+
+3. Add or update a 90-day launch roadmap.
+   This roadmap should describe how AMP prepares to launch the 1-day programme:
+   - Days 1-15: research, stakeholder validation, industry blueprint refinement
+   - Days 16-30: curriculum design, Champion rubric, measurement framework
+   - Days 31-45: partner outreach, facilitator recruitment, content creation
+   - Days 46-60: platform/dashboard setup, seed data, pilot logistics
+   - Days 61-75: participant recruitment, facilitator training, dry runs
+   - Days 76-90: final launch prep, communications, demo readiness, programme launch
+
+4. Update dashboard terminology.
+   Use terms like:
+   - "1-Day Ideathon"
+   - "Launch in 90 Days"
+   - "Activation Day"
+   - "Champion Discovery"
+   - "Post-Event Behaviour Tracking"
+
+   Avoid terms like:
+   - "90-day programme"
+   - "multi-month cohort"
+   - "long programme journey"
+
+5. Update each industry blueprint's programme model.
+   The format should be concise and demo-friendly:
+   - Morning: AI fluency gap briefing and self-assessment
+   - Midday: industry-specific practical AI challenge
+   - Afternoon: peer-led programme design and Champion scoring
+   - Closing: Champion activation pledge and follow-up measurement plan
+
+6. Preserve the core dashboard MVP.
+   Keep:
+   - Six industries: Construction, Architecture, Banking, Childcare, Education, Military
+   - Industry cards
+   - Detail pages
+   - AI Champion scoring
+   - Behaviour-change metrics
+   - AMP admin dashboard
+   - Synthetic seed data only
+   - Vercel deployability
+
+7. Update README and demo narrative.
+   New demo narrative:
+   "AMP can launch a 1-day AI Fluency ideathon within 90 days. The dashboard shows which industries and age groups need support most, what AI Champions look like in each sector, how the 1-day activation programme runs, and how AMP tracks behaviour change after the event."
+
+8. Run verification after changes:
+   - `npm run typecheck`
+   - `npm run build`
+
+9. Commit and push the updated code to:
+   `https://github.com/dansyar/AMP`
+   branch: `main`
+
+Be careful to distinguish between:
+- Programme duration: 1 day
+- Preparation and launch runway: 90 days
+- Follow-up measurement: post-event tracking after the 1-day ideathon
+
+======================================================================
+13. IMPLEMENTATION PROMPT - APPLY TIMELINE CORRECTION
+======================================================================
+
+Update the AMP AI Champions Hub MVP to correct the programme timeline.
+
+Important correction:
+The programme is NOT a 90-day programme.
+
+It should be:
+- A 1-day AI Fluency ideathon / activation programme
+- Designed, prepared, and launched within 90 days
+
+Update the product architecture, dashboard content, programme language, and README accordingly.
+
+Required changes:
+
+1. Replace any framing that implies the learning programme itself lasts 90 days.
+   Correct framing:
+   "A 1-day AI Fluency ideathon designed to identify, train, and activate AI Champions, with a 90-day launch preparation roadmap."
+
+2. Update all industry blueprints so each pilot programme is a 1-day format.
+   For each industry, the programme should include:
+   - Pre-event diagnostic or registration assessment
+   - 1-day in-person or hybrid ideathon
+   - Industry-specific AI knowledge gap briefing
+   - Practical AI challenge
+   - Champion identification activity
+   - Peer-led facilitation practice
+   - Behaviour-change commitment or action pledge
+   - Post-event follow-up measurement
+
+3. Add or update a 90-day launch roadmap.
+   This roadmap should describe how AMP prepares to launch the 1-day programme:
+   - Days 1-15: research, stakeholder validation, industry blueprint refinement
+   - Days 16-30: curriculum design, Champion rubric, measurement framework
+   - Days 31-45: partner outreach, facilitator recruitment, content creation
+   - Days 46-60: platform/dashboard setup, seed data, pilot logistics
+   - Days 61-75: participant recruitment, facilitator training, dry runs
+   - Days 76-90: final launch prep, communications, demo readiness, programme launch
+
+4. Update dashboard terminology.
+   Use terms like:
+   - "1-Day Ideathon"
+   - "Launch in 90 Days"
+   - "Activation Day"
+   - "Champion Discovery"
+   - "Post-Event Behaviour Tracking"
+
+   Avoid terms like:
+   - "90-day programme"
+   - "multi-month cohort"
+   - "long programme journey"
+
+5. Update each industry blueprint's programme model.
+   The format should be concise and demo-friendly:
+   - Morning: AI fluency gap briefing and self-assessment
+   - Midday: industry-specific practical AI challenge
+   - Afternoon: peer-led programme design and Champion scoring
+   - Closing: Champion activation pledge and follow-up measurement plan
+
+6. Preserve the core dashboard MVP.
+   Keep:
+   - Six industries: Construction, Architecture, Banking, Childcare, Education, Military
+   - Industry cards
+   - Detail pages
+   - AI Champion scoring
+   - Behaviour-change metrics
+   - AMP admin dashboard
+   - Synthetic seed data only
+   - Vercel deployability
+
+7. Update README and demo narrative.
+   New demo narrative:
+   "AMP can launch a 1-day AI Fluency ideathon within 90 days. The dashboard shows which industries and age groups need support most, what AI Champions look like in each sector, how the 1-day activation programme runs, and how AMP tracks behaviour change after the event."
+
+8. Run verification after changes:
+   - `npm run typecheck`
+   - `npm run build`
+
+9. Commit and push the updated code to:
+   `https://github.com/dansyar/AMP`
+   branch: `main`
+
+Be careful to distinguish between:
+- Programme duration: 1 day
+- Preparation and launch runway: 90 days
+- Follow-up measurement: post-event tracking after the 1-day ideathon
+
+======================================================================
+14. FINAL CORRECTION PROMPT - REMOVE 90-DAY FRAMING ENTIRELY
+======================================================================
+
+Wait i already said i don't want it to be 90-day, it should only be 1-day
+
+======================================================================
+15. CURRENT PROMPT ARCHIVE REQUEST
+======================================================================
+
+Next output for me all the prompts that i made into a .txt file, inlcuding the meta prompts to generate the prompts

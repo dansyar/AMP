@@ -49,12 +49,6 @@ export type BehaviourChangeEvidence = {
   collectionPoint: string;
 };
 
-export type LaunchRoadmapStep = {
-  window: string;
-  title: string;
-  focus: string;
-};
-
 export type IndustryBlueprint = {
   slug: IndustrySlug;
   industry: string;

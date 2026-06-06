@@ -154,7 +154,7 @@ export function BlueprintDetail({ blueprint }: BlueprintDetailProps) {
         </section>
 
         <section className="rounded-md border border-line bg-white p-5 shadow-panel">
-          <h2 className="text-lg font-semibold text-ink">90-day launch path</h2>
+          <h2 className="text-lg font-semibold text-ink">Activation scale path</h2>
           <ol className="mt-4 space-y-3 text-sm leading-6 text-slate">
             {blueprint.pilot.scalePath.map((step, index) => (
               <li key={step} className="flex gap-3">

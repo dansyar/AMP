@@ -1,4 +1,4 @@
-import type { IndustryBlueprint, LaunchRoadmapStep } from "./types";
+import type { IndustryBlueprint } from "./types";
 
 export const blueprints: IndustryBlueprint[] = [
   {
@@ -69,7 +69,7 @@ export const blueprints: IndustryBlueprint[] = [
       ],
       followUpMeasurement:
         "Collect reviewed report samples and toolbox briefing adoption evidence after the ideathon.",
-      scalePath: ["Prepare 3 site partners", "Train 6 facilitators", "Create Malay/Tamil prompt cards", "Launch first Activation Day"],
+      scalePath: ["Prepare 3 site partners", "Train 6 facilitators", "Create Malay/Tamil prompt cards", "Run first Activation Day"],
     },
     measurement: [
       { label: "Baseline fluency", value: 42, target: 70, description: "Understands AI limits and safe use" },
@@ -165,7 +165,7 @@ export const blueprints: IndustryBlueprint[] = [
       ],
       followUpMeasurement:
         "Collect one documented firm-safe workflow and reviewed design narrative after the ideathon.",
-      scalePath: ["Validate with 2 firms", "Publish workflow cards", "Invite Muslim architect network", "Launch first Activation Day"],
+      scalePath: ["Validate with 2 firms", "Publish workflow cards", "Invite Muslim architect network", "Run first Activation Day"],
     },
     measurement: [
       { label: "Baseline fluency", value: 48, target: 75, description: "Understands AI use beyond images" },
@@ -261,7 +261,7 @@ export const blueprints: IndustryBlueprint[] = [
       ],
       followUpMeasurement:
         "Collect safe prompt audits and manager-verified approved workflow evidence after the ideathon.",
-      scalePath: ["Validate one department", "Add compliance review", "Train department facilitators", "Launch first Activation Day"],
+      scalePath: ["Validate one department", "Add compliance review", "Train department facilitators", "Run first Activation Day"],
     },
     measurement: [
       { label: "Baseline fluency", value: 45, target: 72, description: "Knows approved AI boundaries" },
@@ -357,7 +357,7 @@ export const blueprints: IndustryBlueprint[] = [
       ],
       followUpMeasurement:
         "Collect supervisor-reviewed parent templates and admin relief evidence after the ideathon.",
-      scalePath: ["Validate 2 centres", "Train centre facilitators", "Create privacy-safe prompt bank", "Launch first Activation Day"],
+      scalePath: ["Validate 2 centres", "Train centre facilitators", "Create privacy-safe prompt bank", "Run first Activation Day"],
     },
     measurement: [
       { label: "Baseline fluency", value: 36, target: 68, description: "Understands safe AI use in care settings" },
@@ -453,7 +453,7 @@ export const blueprints: IndustryBlueprint[] = [
       ],
       followUpMeasurement:
         "Collect revised assignment briefs and peer sharing evidence after the ideathon.",
-      scalePath: ["Prepare 3 learning spaces", "Train subject facilitators", "Publish lesson templates", "Launch first Activation Day"],
+      scalePath: ["Prepare 3 learning spaces", "Train subject facilitators", "Publish lesson templates", "Run first Activation Day"],
     },
     measurement: [
       { label: "Baseline fluency", value: 51, target: 78, description: "Understands AI in learning contexts" },
@@ -549,7 +549,7 @@ export const blueprints: IndustryBlueprint[] = [
       ],
       followUpMeasurement:
         "Collect classification-safe prompt reviews and approved non-sensitive workflow evidence after the ideathon.",
-      scalePath: ["Prepare one safe cohort", "Review with security lead", "Train unit facilitators", "Launch first Activation Day"],
+      scalePath: ["Prepare one safe cohort", "Review with security lead", "Train unit facilitators", "Run first Activation Day"],
     },
     measurement: [
       { label: "Baseline fluency", value: 44, target: 72, description: "Understands AI and security boundaries" },
@@ -596,39 +596,6 @@ export const overviewStats = {
       blueprints.length,
   ),
 };
-
-export const launchRoadmap: LaunchRoadmapStep[] = [
-  {
-    window: "Days 1-15",
-    title: "Research and validation",
-    focus: "Validate priority AI gaps with AMP stakeholders, industry mentors, and Muslim professional networks.",
-  },
-  {
-    window: "Days 16-30",
-    title: "Curriculum and rubric design",
-    focus: "Lock the 1-day ideathon flow, Champion scoring rubric, and behaviour-change measurement framework.",
-  },
-  {
-    window: "Days 31-45",
-    title: "Partner and facilitator setup",
-    focus: "Confirm workplace and community partners, recruit facilitators, and prepare industry-specific content.",
-  },
-  {
-    window: "Days 46-60",
-    title: "Dashboard and logistics",
-    focus: "Prepare the dashboard, seed data, registration diagnostic, venue flow, and Activation Day materials.",
-  },
-  {
-    window: "Days 61-75",
-    title: "Recruitment and dry runs",
-    focus: "Recruit participants, train Champion facilitators, run dry runs, and test fallback demo assets.",
-  },
-  {
-    window: "Days 76-90",
-    title: "Launch preparation",
-    focus: "Finalize communications, judging narrative, partner briefings, and launch the 1-day AI Fluency ideathon.",
-  },
-];
 
 export const fluencyDimensions = [
   "Baseline fluency",
