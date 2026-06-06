@@ -1,8 +1,8 @@
-import { Activity, ClipboardCheck, Network, UsersRound } from "lucide-react";
+import { Activity, CalendarDays, ClipboardCheck, Network, UsersRound } from "lucide-react";
 import { BlueprintCard } from "@/components/BlueprintCard";
 import { IndustryComparison } from "@/components/IndustryComparison";
 import { MetricCard } from "@/components/MetricCard";
-import { blueprints, overviewStats } from "@/lib/blueprints";
+import { blueprints, launchRoadmap, overviewStats } from "@/lib/blueprints";
 
 export default function Home() {
   return (
@@ -14,12 +14,12 @@ export default function Home() {
               AMP AI Fluency Ideathon
             </p>
             <h1 className="mt-2 max-w-4xl text-3xl font-semibold text-ink sm:text-4xl">
-              Industry blueprints for finding and activating AI Champions
+              1-Day Ideathon blueprints for finding and activating AI Champions
             </h1>
             <p className="mt-3 max-w-3xl text-base leading-7 text-slate">
               A Vercel-ready dashboard MVP for mapping AI fluency gaps, targeting the
-              right professional groups, and scaling peer-led learning across workplaces
-              and community spaces.
+              right professional groups, running a 1-day activation programme, and
+              launching it within a 90-day preparation runway.
             </p>
           </div>
           <div className="grid min-w-64 grid-cols-2 gap-3 text-sm">
@@ -29,7 +29,7 @@ export default function Home() {
             </div>
             <div className="rounded-md bg-paper p-3">
               <p className="font-semibold text-ink">{overviewStats.averageScalingReadiness}%</p>
-              <p className="text-slate">Scale readiness</p>
+              <p className="text-slate">90-day launch readiness</p>
             </div>
           </div>
         </div>
@@ -47,14 +47,14 @@ export default function Home() {
           caption="Potential peer leaders identified by readiness signals."
         />
         <MetricCard
-          label="Sessions"
+          label="Activation Day"
           value={overviewStats.sessionsPlanned}
-          caption="Peer-led pilot sessions planned for the first cohort."
+          caption="1-day ideathon sessions planned for the launch cohort."
         />
         <MetricCard
           label="Evidence"
           value={overviewStats.behaviourEvidenceLogged}
-          caption="Behaviour change logs beyond attendance counts."
+          caption="Post-event behaviour change logs beyond attendance counts."
         />
       </section>
 
@@ -64,16 +64,17 @@ export default function Home() {
         <section className="rounded-md border border-line bg-white p-5 shadow-panel">
           <h2 className="text-lg font-semibold text-ink">Measurement model</h2>
           <p className="mt-2 text-sm leading-6 text-slate">
-            The MVP separates programme participation from real fluency. AMP can show
-            baseline understanding, practical completion, confidence shift, ethical
-            judgement, workplace use, peer teaching, and follow-up evidence.
+            The MVP separates attendance from real fluency. AMP can show baseline
+            understanding before the ideathon, practical completion on Activation Day,
+            confidence shift, ethical judgement, workplace use, peer teaching, and
+            post-event evidence.
           </p>
           <div className="mt-5 grid gap-3 sm:grid-cols-2">
             {[
-              ["Baseline", "Pre-programme fluency and confidence"],
-              ["Practice", "One industry-specific AI task completed"],
+              ["Baseline", "Pre-event fluency and confidence"],
+              ["Practice", "One Activation Day AI task completed"],
               ["Ethics", "Privacy and accountability judgement"],
-              ["Behaviour", "Logged use at work or in community"],
+              ["Behaviour", "Post-event use at work or in community"],
               ["Teaching", "Peer session or shared workflow"],
               ["Scale", "Champion readiness by industry"],
             ].map(([title, description]) => (
@@ -86,12 +87,37 @@ export default function Home() {
         </section>
       </section>
 
+      <section className="mt-6 rounded-md border border-line bg-white p-5 shadow-panel">
+        <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-wide text-mint">
+              Launch in 90 Days
+            </p>
+            <h2 className="mt-1 text-xl font-semibold text-ink">
+              Preparation roadmap for the 1-day AI Fluency ideathon
+            </h2>
+          </div>
+          <CalendarDays className="hidden h-7 w-7 text-saffron sm:block" aria-hidden="true" />
+        </div>
+        <div className="mt-5 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+          {launchRoadmap.map((step) => (
+            <div key={step.window} className="rounded-md border border-line bg-paper p-4">
+              <p className="text-xs font-semibold uppercase tracking-wide text-saffron">
+                {step.window}
+              </p>
+              <p className="mt-2 font-semibold text-ink">{step.title}</p>
+              <p className="mt-2 text-sm leading-6 text-slate">{step.focus}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       <section className="mt-6">
         <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <h2 className="text-xl font-semibold text-ink">Industry AI Fluency Blueprints</h2>
             <p className="text-sm text-slate">
-              Each blueprint has a target age/career group, Champion model, pilot, and measurement plan.
+              Each blueprint has a target age/career group, Champion model, 1-day ideathon, and post-event measurement plan.
             </p>
           </div>
           <div className="flex gap-2 text-xs font-semibold uppercase tracking-wide text-slate">

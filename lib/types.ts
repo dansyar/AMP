@@ -38,6 +38,8 @@ export type ProgrammePilot = {
   peerLedModel: string;
   modules: string[];
   starterChallenge: string;
+  activationDayAgenda: string[];
+  followUpMeasurement: string;
   scalePath: string[];
 };
 
@@ -45,6 +47,12 @@ export type BehaviourChangeEvidence = {
   metric: string;
   evidence: string;
   collectionPoint: string;
+};
+
+export type LaunchRoadmapStep = {
+  window: string;
+  title: string;
+  focus: string;
 };
 
 export type IndustryBlueprint = {

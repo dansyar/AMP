@@ -98,7 +98,7 @@ export function BlueprintDetail({ blueprint }: BlueprintDetailProps) {
         <section className="rounded-md border border-line bg-white p-5 shadow-panel">
           <div className="flex items-center gap-2">
             <Route className="h-5 w-5 text-sky" aria-hidden="true" />
-            <h2 className="text-lg font-semibold text-ink">Pilot programme</h2>
+            <h2 className="text-lg font-semibold text-ink">1-Day Ideathon</h2>
           </div>
           <dl className="mt-4 space-y-3 text-sm">
             <div>
@@ -106,11 +106,11 @@ export function BlueprintDetail({ blueprint }: BlueprintDetailProps) {
               <dd className="mt-1 leading-6 text-slate">{blueprint.pilot.duration} · {blueprint.pilot.format}</dd>
             </div>
             <div>
-              <dt className="font-semibold text-ink">Cohort</dt>
+              <dt className="font-semibold text-ink">Activation group</dt>
               <dd className="mt-1 leading-6 text-slate">{blueprint.pilot.cohort}</dd>
             </div>
             <div>
-              <dt className="font-semibold text-ink">Starter challenge</dt>
+              <dt className="font-semibold text-ink">Practical challenge</dt>
               <dd className="mt-1 leading-6 text-slate">{blueprint.pilot.starterChallenge}</dd>
             </div>
           </dl>
@@ -119,7 +119,7 @@ export function BlueprintDetail({ blueprint }: BlueprintDetailProps) {
 
       <div className="mt-6 grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
         <section className="rounded-md border border-line bg-white p-5 shadow-panel">
-          <h2 className="text-lg font-semibold text-ink">Champion scoring</h2>
+          <h2 className="text-lg font-semibold text-ink">Champion Discovery scoring</h2>
           <div className="mt-4 space-y-4">
             {championScoreRows(blueprint.champion).map(([label, value]) => (
               <ProgressBar key={label} label={label} value={value} />
@@ -142,7 +142,7 @@ export function BlueprintDetail({ blueprint }: BlueprintDetailProps) {
 
       <div className="mt-6 grid gap-6 lg:grid-cols-2">
         <section className="rounded-md border border-line bg-white p-5 shadow-panel">
-          <h2 className="text-lg font-semibold text-ink">Peer-led model</h2>
+          <h2 className="text-lg font-semibold text-ink">Peer-led Activation Day model</h2>
           <p className="mt-3 text-sm leading-6 text-slate">{blueprint.pilot.peerLedModel}</p>
           <div className="mt-4 flex flex-wrap gap-2">
             {blueprint.pilot.modules.map((module) => (
@@ -154,7 +154,7 @@ export function BlueprintDetail({ blueprint }: BlueprintDetailProps) {
         </section>
 
         <section className="rounded-md border border-line bg-white p-5 shadow-panel">
-          <h2 className="text-lg font-semibold text-ink">Scaling strategy</h2>
+          <h2 className="text-lg font-semibold text-ink">90-day launch path</h2>
           <ol className="mt-4 space-y-3 text-sm leading-6 text-slate">
             {blueprint.pilot.scalePath.map((step, index) => (
               <li key={step} className="flex gap-3">
@@ -169,7 +169,22 @@ export function BlueprintDetail({ blueprint }: BlueprintDetailProps) {
       </div>
 
       <section className="mt-6 rounded-md border border-line bg-white p-5 shadow-panel">
-        <h2 className="text-lg font-semibold text-ink">Behaviour change evidence</h2>
+        <h2 className="text-lg font-semibold text-ink">Activation Day agenda</h2>
+        <div className="mt-4 grid gap-3 md:grid-cols-2">
+          {blueprint.pilot.activationDayAgenda.map((item) => (
+            <div key={item} className="rounded-md border border-line bg-paper p-4">
+              <p className="text-sm leading-6 text-slate">{item}</p>
+            </div>
+          ))}
+        </div>
+        <div className="mt-4 rounded-md bg-mint/10 p-4">
+          <p className="text-sm font-semibold text-mint">Post-Event Behaviour Tracking</p>
+          <p className="mt-2 text-sm leading-6 text-slate">{blueprint.pilot.followUpMeasurement}</p>
+        </div>
+      </section>
+
+      <section className="mt-6 rounded-md border border-line bg-white p-5 shadow-panel">
+        <h2 className="text-lg font-semibold text-ink">Post-Event Behaviour Tracking</h2>
         <div className="mt-4 grid gap-4 md:grid-cols-2">
           {blueprint.behaviourEvidence.map((evidence) => (
             <div key={evidence.metric} className="rounded-md border border-line p-4">

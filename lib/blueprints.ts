@@ -1,4 +1,4 @@
-import type { IndustryBlueprint } from "./types";
+import type { IndustryBlueprint, LaunchRoadmapStep } from "./types";
 
 export const blueprints: IndustryBlueprint[] = [
   {
@@ -46,32 +46,47 @@ export const blueprints: IndustryBlueprint[] = [
     },
     pilot: {
       name: "AI Toolbox Briefing Sprint",
-      duration: "3 weeks",
-      format: "Worksite lunch-and-learn plus WhatsApp follow-up",
-      cohort: "12 supervisors from 3 worksites",
+      duration: "1-day Activation Day",
+      format: "Hybrid worksite ideathon with pre-event diagnostic and post-event behaviour tracking",
+      cohort: "12 supervisors from 3 worksites in one activation cohort",
       peerLedModel:
-        "One Champion runs a 45-minute weekly practice circle using anonymised site scenarios and AMP-provided prompt cards.",
-      modules: ["Safe AI basics", "Daily report acceleration", "Toolbox briefing design", "Evidence logging"],
+        "One Champion candidate facilitates table practice using anonymised site scenarios, AMP prompt cards, and a safety review checklist.",
+      modules: [
+        "Pre-event diagnostic",
+        "Safety-first AI gap briefing",
+        "Daily report challenge",
+        "Champion Discovery scoring",
+        "Peer facilitation practice",
+        "Action pledge",
+      ],
       starterChallenge:
         "Convert a messy daily site note into a safety-aware progress update and toolbox briefing.",
-      scalePath: ["Pilot 3 sites", "Train 6 Champions", "Create Malay/Tamil prompt cards", "Partner with contractors"],
+      activationDayAgenda: [
+        "Morning: AI fluency gap briefing and supervisor self-assessment",
+        "Midday: anonymised site-report and toolbox briefing challenge",
+        "Afternoon: peer-led briefing design and Champion scoring",
+        "Closing: safety-reviewed action pledge and follow-up measurement plan",
+      ],
+      followUpMeasurement:
+        "Collect reviewed report samples and toolbox briefing adoption evidence after the ideathon.",
+      scalePath: ["Prepare 3 site partners", "Train 6 facilitators", "Create Malay/Tamil prompt cards", "Launch first Activation Day"],
     },
     measurement: [
       { label: "Baseline fluency", value: 42, target: 70, description: "Understands AI limits and safe use" },
       { label: "Practical task completion", value: 64, target: 85, description: "Can produce reviewed site updates" },
-      { label: "Confidence shift", value: 31, target: 55, description: "Feels able to use AI weekly" },
+      { label: "Confidence shift", value: 31, target: 55, description: "Feels able to use AI after the event" },
       { label: "Peer teaching", value: 22, target: 45, description: "Shares a prompt or briefing method" },
     ],
     behaviourEvidence: [
       {
         metric: "Reviewed AI-assisted report",
         evidence: "Before/after daily report sample with confidential details removed",
-        collectionPoint: "Week 2",
+        collectionPoint: "Activation Day",
       },
       {
         metric: "Toolbox briefing adoption",
         evidence: "Supervisor logs one briefing drafted with AI and reviewed manually",
-        collectionPoint: "Week 3",
+        collectionPoint: "Post-event follow-up",
       },
     ],
     dashboardStats: {
@@ -127,15 +142,30 @@ export const blueprints: IndustryBlueprint[] = [
     },
     pilot: {
       name: "AI Design Review Studio",
-      duration: "4 weeks",
-      format: "Studio critique circle",
-      cohort: "10 project architects across small and mid-sized firms",
+      duration: "1-day Activation Day",
+      format: "In-person studio ideathon with pre-event diagnostic and post-event behaviour tracking",
+      cohort: "10 project architects across small and mid-sized firms in one activation cohort",
       peerLedModel:
-        "Champions host design workflow clinics where peers test AI on non-confidential briefs and document firm-safe practices.",
-      modules: ["AI for design research", "Client narrative drafting", "Ethics and authorship", "Quality review loops"],
+        "Champion candidates facilitate design workflow tables where peers test AI on non-confidential briefs and document firm-safe practices.",
+      modules: [
+        "Pre-event diagnostic",
+        "Design AI gap briefing",
+        "Client narrative challenge",
+        "Champion Discovery scoring",
+        "Peer critique facilitation",
+        "Action pledge",
+      ],
       starterChallenge:
         "Create a client-ready design rationale from a synthetic project brief, with source and risk notes.",
-      scalePath: ["Pilot 2 firms", "Publish workflow cards", "Invite Muslim architect network", "Create firm policy template"],
+      activationDayAgenda: [
+        "Morning: AI fluency gap briefing and project architect self-assessment",
+        "Midday: synthetic design-rationale and source-checking challenge",
+        "Afternoon: peer-led critique format and Champion scoring",
+        "Closing: firm-safe workflow pledge and follow-up measurement plan",
+      ],
+      followUpMeasurement:
+        "Collect one documented firm-safe workflow and reviewed design narrative after the ideathon.",
+      scalePath: ["Validate with 2 firms", "Publish workflow cards", "Invite Muslim architect network", "Launch first Activation Day"],
     },
     measurement: [
       { label: "Baseline fluency", value: 48, target: 75, description: "Understands AI use beyond images" },
@@ -147,12 +177,12 @@ export const blueprints: IndustryBlueprint[] = [
       {
         metric: "Reviewed design narrative",
         evidence: "Synthetic brief, AI-assisted output, human review notes",
-        collectionPoint: "Week 2",
+        collectionPoint: "Activation Day",
       },
       {
         metric: "Firm-safe workflow",
         evidence: "One documented workflow with data boundaries",
-        collectionPoint: "Week 4",
+        collectionPoint: "Post-event follow-up",
       },
     ],
     dashboardStats: {
@@ -208,15 +238,30 @@ export const blueprints: IndustryBlueprint[] = [
     },
     pilot: {
       name: "Safe AI for Banking Workflows",
-      duration: "3 weeks",
-      format: "Closed workplace cohort",
-      cohort: "15 relationship and operations professionals",
+      duration: "1-day Activation Day",
+      format: "Closed workplace ideathon with pre-event diagnostic and post-event behaviour tracking",
+      cohort: "15 relationship and operations professionals in one activation cohort",
       peerLedModel:
-        "Champions run scenario labs using synthetic customer cases and a red/amber/green AI use checklist.",
-      modules: ["AI risk boundaries", "Prompting with anonymised data", "Policy summarisation", "Human review routines"],
+        "Champion candidates run scenario labs using synthetic customer cases and a red/amber/green AI use checklist.",
+      modules: [
+        "Pre-event diagnostic",
+        "Compliance-safe AI gap briefing",
+        "Synthetic customer FAQ challenge",
+        "Champion Discovery scoring",
+        "Peer facilitation practice",
+        "Action pledge",
+      ],
       starterChallenge:
         "Use only synthetic data to prepare a customer education FAQ and mark compliance review points.",
-      scalePath: ["Pilot with one department", "Add compliance review", "Train department Champions", "Template internal policy playbooks"],
+      activationDayAgenda: [
+        "Morning: AI fluency gap briefing and compliance boundary self-assessment",
+        "Midday: synthetic customer education and policy summary challenge",
+        "Afternoon: peer-led safe-use lab and Champion scoring",
+        "Closing: approved-use pledge and follow-up measurement plan",
+      ],
+      followUpMeasurement:
+        "Collect safe prompt audits and manager-verified approved workflow evidence after the ideathon.",
+      scalePath: ["Validate one department", "Add compliance review", "Train department facilitators", "Launch first Activation Day"],
     },
     measurement: [
       { label: "Baseline fluency", value: 45, target: 72, description: "Knows approved AI boundaries" },
@@ -228,12 +273,12 @@ export const blueprints: IndustryBlueprint[] = [
       {
         metric: "Safe prompt audit",
         evidence: "Prompt and output showing no customer data exposure",
-        collectionPoint: "Week 1",
+        collectionPoint: "Activation Day",
       },
       {
         metric: "Approved workflow use",
         evidence: "Manager-verified use of AI for internal briefing or process summary",
-        collectionPoint: "Week 3",
+        collectionPoint: "Post-event follow-up",
       },
     ],
     dashboardStats: {
@@ -289,15 +334,30 @@ export const blueprints: IndustryBlueprint[] = [
     },
     pilot: {
       name: "AI for Child-Safe Admin Relief",
-      duration: "4 weeks",
-      format: "Centre-based practice circle",
-      cohort: "10 educators and supervisors",
+      duration: "1-day Activation Day",
+      format: "Centre-based ideathon with pre-event diagnostic and post-event behaviour tracking",
+      cohort: "10 educators and supervisors in one activation cohort",
       peerLedModel:
-        "Champions host small after-hours circles using fictional classroom scenarios and a child-data safety checklist.",
-      modules: ["AI basics for care settings", "Child data boundaries", "Parent communication templates", "Lesson planning support"],
+        "Champion candidates facilitate small tables using fictional classroom scenarios and a child-data safety checklist.",
+      modules: [
+        "Pre-event diagnostic",
+        "Child-safe AI gap briefing",
+        "Parent update challenge",
+        "Champion Discovery scoring",
+        "Peer facilitation practice",
+        "Action pledge",
+      ],
       starterChallenge:
         "Create a parent update from an anonymised fictional classroom theme and review it for privacy and tone.",
-      scalePath: ["Pilot 2 centres", "Train centre supervisors", "Create privacy-safe prompt bank", "Share templates through AMP network"],
+      activationDayAgenda: [
+        "Morning: AI fluency gap briefing and educator self-assessment",
+        "Midday: fictional parent-update and lesson support challenge",
+        "Afternoon: peer-led centre routine design and Champion scoring",
+        "Closing: child-data-safe action pledge and follow-up measurement plan",
+      ],
+      followUpMeasurement:
+        "Collect supervisor-reviewed parent templates and admin relief evidence after the ideathon.",
+      scalePath: ["Validate 2 centres", "Train centre facilitators", "Create privacy-safe prompt bank", "Launch first Activation Day"],
     },
     measurement: [
       { label: "Baseline fluency", value: 36, target: 68, description: "Understands safe AI use in care settings" },
@@ -309,12 +369,12 @@ export const blueprints: IndustryBlueprint[] = [
       {
         metric: "Privacy-safe parent template",
         evidence: "Template with no child identifiers and supervisor review",
-        collectionPoint: "Week 2",
+        collectionPoint: "Activation Day",
       },
       {
         metric: "Admin time relief",
         evidence: "Educator self-report of one repeated admin task improved",
-        collectionPoint: "Week 4",
+        collectionPoint: "Post-event follow-up",
       },
     ],
     dashboardStats: {
@@ -370,15 +430,30 @@ export const blueprints: IndustryBlueprint[] = [
     },
     pilot: {
       name: "AI-Ready Educator Circle",
-      duration: "4 weeks",
-      format: "Peer lesson lab",
-      cohort: "14 educators across schools, madrasahs, and adult learning spaces",
+      duration: "1-day Activation Day",
+      format: "Peer lesson ideathon with pre-event diagnostic and post-event behaviour tracking",
+      cohort: "14 educators across schools, madrasahs, and adult learning spaces in one activation cohort",
       peerLedModel:
-        "Champions facilitate lesson redesign labs where peers adapt one real lesson or assessment using privacy-safe examples.",
-      modules: ["AI basics for educators", "Assessment integrity", "Feedback support", "Student AI literacy"],
+        "Champion candidates facilitate lesson redesign tables where peers adapt one lesson or assessment using privacy-safe examples.",
+      modules: [
+        "Pre-event diagnostic",
+        "AI pedagogy gap briefing",
+        "AI-aware assignment challenge",
+        "Champion Discovery scoring",
+        "Peer facilitation practice",
+        "Action pledge",
+      ],
       starterChallenge:
         "Redesign one assignment so students can use AI transparently while still demonstrating learning.",
-      scalePath: ["Pilot across 3 learning spaces", "Train subject Champions", "Publish lesson templates", "Run termly educator circles"],
+      activationDayAgenda: [
+        "Morning: AI fluency gap briefing and educator self-assessment",
+        "Midday: AI-aware lesson or assignment redesign challenge",
+        "Afternoon: peer-led teaching clinic design and Champion scoring",
+        "Closing: classroom action pledge and follow-up measurement plan",
+      ],
+      followUpMeasurement:
+        "Collect revised assignment briefs and peer sharing evidence after the ideathon.",
+      scalePath: ["Prepare 3 learning spaces", "Train subject facilitators", "Publish lesson templates", "Launch first Activation Day"],
     },
     measurement: [
       { label: "Baseline fluency", value: 51, target: 78, description: "Understands AI in learning contexts" },
@@ -390,12 +465,12 @@ export const blueprints: IndustryBlueprint[] = [
       {
         metric: "AI-aware assignment",
         evidence: "Revised assignment brief and reflection on assessment integrity",
-        collectionPoint: "Week 3",
+        collectionPoint: "Activation Day",
       },
       {
         metric: "Peer sharing",
         evidence: "Educator shares template or runs a 20-minute department clinic",
-        collectionPoint: "Week 4",
+        collectionPoint: "Post-event follow-up",
       },
     ],
     dashboardStats: {
@@ -451,15 +526,30 @@ export const blueprints: IndustryBlueprint[] = [
     },
     pilot: {
       name: "Secure AI Staffwork Lab",
-      duration: "3 weeks",
-      format: "Closed cohort with sanitised scenarios",
-      cohort: "12 commanders and staff officers",
+      duration: "1-day Activation Day",
+      format: "Closed ideathon with sanitised scenarios, pre-event diagnostic, and post-event behaviour tracking",
+      cohort: "12 commanders and staff officers in one activation cohort",
       peerLedModel:
-        "Champions lead controlled practice sessions using fictional training scenarios and a strict information classification checklist.",
-      modules: ["AI boundaries in secure environments", "Sanitised staffwork", "Training scenario support", "After-action learning"],
+        "Champion candidates lead controlled practice tables using fictional training scenarios and a strict information classification checklist.",
+      modules: [
+        "Pre-event diagnostic",
+        "Secure AI gap briefing",
+        "Sanitised staffwork challenge",
+        "Champion Discovery scoring",
+        "Peer facilitation practice",
+        "Action pledge",
+      ],
       starterChallenge:
         "Create a training scenario inject from a fictional brief and identify what information must never be entered into AI tools.",
-      scalePath: ["Pilot in one safe cohort", "Review with security lead", "Train unit Champions", "Build approved prompt library"],
+      activationDayAgenda: [
+        "Morning: AI fluency gap briefing and information-boundary self-assessment",
+        "Midday: fictional training scenario and staffwork challenge",
+        "Afternoon: peer-led secure-use lab and Champion scoring",
+        "Closing: approved-boundary action pledge and follow-up measurement plan",
+      ],
+      followUpMeasurement:
+        "Collect classification-safe prompt reviews and approved non-sensitive workflow evidence after the ideathon.",
+      scalePath: ["Prepare one safe cohort", "Review with security lead", "Train unit facilitators", "Launch first Activation Day"],
     },
     measurement: [
       { label: "Baseline fluency", value: 44, target: 72, description: "Understands AI and security boundaries" },
@@ -471,12 +561,12 @@ export const blueprints: IndustryBlueprint[] = [
       {
         metric: "Classification-safe prompt",
         evidence: "Prompt review confirming no restricted information",
-        collectionPoint: "Week 1",
+        collectionPoint: "Activation Day",
       },
       {
         metric: "Training support use",
         evidence: "Reviewed fictional scenario or checklist generated with AI support",
-        collectionPoint: "Week 3",
+        collectionPoint: "Post-event follow-up",
       },
     ],
     dashboardStats: {
@@ -506,6 +596,39 @@ export const overviewStats = {
       blueprints.length,
   ),
 };
+
+export const launchRoadmap: LaunchRoadmapStep[] = [
+  {
+    window: "Days 1-15",
+    title: "Research and validation",
+    focus: "Validate priority AI gaps with AMP stakeholders, industry mentors, and Muslim professional networks.",
+  },
+  {
+    window: "Days 16-30",
+    title: "Curriculum and rubric design",
+    focus: "Lock the 1-day ideathon flow, Champion scoring rubric, and behaviour-change measurement framework.",
+  },
+  {
+    window: "Days 31-45",
+    title: "Partner and facilitator setup",
+    focus: "Confirm workplace and community partners, recruit facilitators, and prepare industry-specific content.",
+  },
+  {
+    window: "Days 46-60",
+    title: "Dashboard and logistics",
+    focus: "Prepare the dashboard, seed data, registration diagnostic, venue flow, and Activation Day materials.",
+  },
+  {
+    window: "Days 61-75",
+    title: "Recruitment and dry runs",
+    focus: "Recruit participants, train Champion facilitators, run dry runs, and test fallback demo assets.",
+  },
+  {
+    window: "Days 76-90",
+    title: "Launch preparation",
+    focus: "Finalize communications, judging narrative, partner briefings, and launch the 1-day AI Fluency ideathon.",
+  },
+];
 
 export const fluencyDimensions = [
   "Baseline fluency",

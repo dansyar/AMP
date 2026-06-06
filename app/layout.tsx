@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "AMP AI Champions Hub",
   description:
-    "Industry blueprints for AMP's AI Fluency ideathon and AI Champion programme.",
+    "Industry blueprints for AMP's 1-day AI Fluency ideathon and 90-day launch roadmap.",
 };
 
 export default function RootLayout({
