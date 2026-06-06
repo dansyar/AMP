@@ -8,6 +8,18 @@ export default function Home() {
   return (
     <main className="mx-auto min-h-screen max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
       <section className="rounded-md border border-line bg-white p-5 shadow-panel sm:p-6">
+        <div className="mb-6 flex items-center justify-between border-b border-line pb-4">
+          <div className="flex items-center gap-3">
+            <span className="text-xs font-semibold uppercase tracking-wide text-slate">
+              Presented with
+            </span>
+            <img
+              className="h-7 w-auto"
+              src="https://news.cognizant.com/images/COG-Logo.svg"
+              alt="Cognizant"
+            />
+          </div>
+        </div>
         <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
           <div>
             <p className="text-sm font-semibold uppercase tracking-wide text-mint">
