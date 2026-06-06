@@ -24,15 +24,15 @@ export default function Home() {
         <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
           <div>
             <p className="text-sm font-semibold uppercase tracking-wide text-mint">
-              AMP AI Fluency Programme
+              AMP AI Fluency Ideathon
             </p>
             <h1 className="mt-2 max-w-4xl text-3xl font-semibold text-ink sm:text-4xl">
-              90-Day blueprints for building and activating AI Champions
+              1-Day Ideathon blueprints for finding and activating AI Champions
             </h1>
             <p className="mt-3 max-w-3xl text-base leading-7 text-slate">
               A Vercel-ready dashboard MVP for mapping AI fluency gaps, targeting the
-              right professional groups, running a 90-day peer-led programme, and
-              tracking behaviour change throughout the journey.
+              right professional groups, running a 1-day activation programme, and
+              tracking behaviour change after the event.
             </p>
             <a
               className="focus-ring mt-5 inline-flex items-center gap-2 rounded-md bg-ink px-4 py-3 text-sm font-semibold text-white"
@@ -52,7 +52,7 @@ export default function Home() {
             </div>
             <div className="rounded-md bg-paper p-3">
               <p className="font-semibold text-ink">{overviewStats.averageScalingReadiness}%</p>
-              <p className="text-slate">Programme readiness</p>
+              <p className="text-slate">Activation readiness</p>
             </div>
           </div>
         </div>
@@ -70,14 +70,14 @@ export default function Home() {
           caption="Potential peer leaders identified by readiness signals."
         />
         <MetricCard
-          label="90-Day Cohorts"
+          label="Activation Day"
           value={overviewStats.sessionsPlanned}
-          caption="Peer-led programme cohorts planned across target industries."
+          caption="1-day ideathon sessions planned for the activation cohort."
         />
         <MetricCard
           label="Evidence"
           value={overviewStats.behaviourEvidenceLogged}
-          caption="Behaviour change logs beyond attendance counts."
+          caption="Post-event behaviour change logs beyond attendance counts."
         />
       </section>
 
@@ -88,16 +88,16 @@ export default function Home() {
           <h2 className="text-lg font-semibold text-ink">Measurement model</h2>
           <p className="mt-2 text-sm leading-6 text-slate">
             The MVP separates attendance from real fluency. AMP can show baseline
-            understanding before the programme, practical completion during the 90 days,
+            understanding before the ideathon, practical completion on Activation Day,
             confidence shift, ethical judgement, workplace use, peer teaching, and
-            end-of-programme evidence.
+            post-event evidence.
           </p>
           <div className="mt-5 grid gap-3 sm:grid-cols-2">
             {[
-              ["Baseline", "Pre-programme fluency and confidence"],
-              ["Practice", "90-day practical AI tasks completed"],
+              ["Baseline", "Pre-event fluency and confidence"],
+              ["Practice", "One Activation Day AI task completed"],
               ["Ethics", "Privacy and accountability judgement"],
-              ["Behaviour", "Logged use at work or in community"],
+              ["Behaviour", "Post-event use at work or in community"],
               ["Teaching", "Peer session or shared workflow"],
               ["Scale", "Champion readiness by industry"],
             ].map(([title, description]) => (
@@ -115,7 +115,7 @@ export default function Home() {
           <div>
             <h2 className="text-xl font-semibold text-ink">Industry AI Fluency Blueprints</h2>
             <p className="text-sm text-slate">
-              Each blueprint has a target age/career group, Champion model, 90-day programme, and behaviour measurement plan.
+              Each blueprint has a target age/career group, Champion model, 1-day ideathon, and post-event measurement plan.
             </p>
           </div>
           <div className="flex gap-2 text-xs font-semibold uppercase tracking-wide text-slate">
