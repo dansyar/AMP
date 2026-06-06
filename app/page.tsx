@@ -1,4 +1,4 @@
-import { Activity, ClipboardCheck, Network, UsersRound } from "lucide-react";
+import { Activity, ClipboardCheck, Download, Network, UsersRound } from "lucide-react";
 import { BlueprintCard } from "@/components/BlueprintCard";
 import { IndustryComparison } from "@/components/IndustryComparison";
 import { MetricCard } from "@/components/MetricCard";
@@ -21,6 +21,16 @@ export default function Home() {
               right professional groups, running a 1-day activation programme, and
               tracking behaviour change after the event.
             </p>
+            <a
+              className="focus-ring mt-5 inline-flex items-center gap-2 rounded-md bg-ink px-4 py-3 text-sm font-semibold text-white"
+              href="https://raw.githubusercontent.com/dansyar/AMP/main/amp-codex-prompts.txt"
+              download="amp-codex-prompts.txt"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Download className="h-4 w-4" aria-hidden="true" />
+              Download prompt archive
+            </a>
           </div>
           <div className="grid min-w-64 grid-cols-2 gap-3 text-sm">
             <div className="rounded-md bg-paper p-3">
